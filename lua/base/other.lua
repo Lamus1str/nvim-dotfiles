@@ -25,3 +25,8 @@ opt.completeopt = 'menuone,noselect'
 vim.cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]
 -- Не автокомментировать новые линии при переходе на новую строку
 -- Выполнение комманд vimScript из lua
+
+opt.guifont = "Monospace:h10"
+-- Размер шрифта для neovide
+
+g.mapleader = " "
