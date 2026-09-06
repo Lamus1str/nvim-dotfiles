@@ -40,9 +40,10 @@ return {
 				command = "phpcbf",
 				-- Стандартные аргументы для phpcbf
 				args = {
+					"-d",
 					"--standard=PSR12", -- Можно изменить на свой стандарт: PSR1, PSR2, PSR12, или свой phpcs.xml
+					"--severity=1",
 					"--report=summary",
-					"--no-patch",  -- Не создавать патчи
 					"-",           -- Читать из stdin
 				},
 				stdin = true,    -- Передаем содержимое файла через stdin
